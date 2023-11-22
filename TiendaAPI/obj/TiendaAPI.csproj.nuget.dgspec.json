@@ -1,0 +1,280 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI\\TiendaAPI.csproj": {}
+  },
+  "projects": {
+    "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Common\\TiendaAPI.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Common\\TiendaAPI.Common.csproj",
+        "projectName": "TiendaAPI.Common",
+        "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Common\\TiendaAPI.Common.csproj",
+        "packagesPath": "C:\\Users\\Adriel\\.nuget\\packages\\",
+        "outputPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Adriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj",
+        "projectName": "TiendaAPI.Data",
+        "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj",
+        "packagesPath": "C:\\Users\\Adriel\\.nuget\\packages\\",
+        "outputPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Adriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj",
+        "projectName": "TiendaAPI.Service",
+        "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj",
+        "packagesPath": "C:\\Users\\Adriel\\.nuget\\packages\\",
+        "outputPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Adriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Common\\TiendaAPI.Common.csproj": {
+                "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Common\\TiendaAPI.Common.csproj"
+              },
+              "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj": {
+                "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Localization.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI\\TiendaAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI\\TiendaAPI.csproj",
+        "projectName": "TiendaAPI",
+        "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI\\TiendaAPI.csproj",
+        "packagesPath": "C:\\Users\\Adriel\\.nuget\\packages\\",
+        "outputPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Adriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Common\\TiendaAPI.Common.csproj": {
+                "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Common\\TiendaAPI.Common.csproj"
+              },
+              "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj": {
+                "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj"
+              },
+              "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj": {
+                "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
