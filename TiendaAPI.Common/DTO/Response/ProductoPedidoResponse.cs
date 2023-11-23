@@ -11,7 +11,7 @@ namespace TiendaAPI.Common.DTO.Response
     public class ProductoPedidoResponse
     {
         public int ProductoPedidoId { get; set; }
-        public ProductoResponse Producto { get; set; }
-        public PedidoResponse Pedido { get; set; }
+        public int ProductoId { get; set; }
+        public int PedidoId { get; set; }
     }
 }
