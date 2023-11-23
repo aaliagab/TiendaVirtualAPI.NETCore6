@@ -1,13 +1,11 @@
-﻿using Microsoft.Extensions.Localization;
+﻿using TiendaAPI.Services.Exceptions.BaseExceptions;
 
-namespace APICore.Services.Exceptions
+namespace TiendaAPI.Services.Exceptions.BadRequest
 {
     public class EmptyNameBadRequestException : BaseBadRequestException
     {
-        public EmptyNameBadRequestException(IStringLocalizer<object> localizer) : base()
+        public EmptyNameBadRequestException() : base()
         {
-            CustomCode = 400011;
-            CustomMessage = localizer.GetString(CustomCode.ToString());
         }
     }
 }

@@ -222,7 +222,26 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Localization.Abstractions/6.0.0": {
+      "Microsoft.Extensions.Localization/6.0.25": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Localization.Abstractions": "6.0.25",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.4",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/6.0.25": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Localization.Abstractions.dll": {
@@ -1016,10 +1035,29 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Localization.Abstractions/6.0.0": {
-      "sha512": "UQJmE78r414kbguPmvbT6MIz0r8LPsBhjLNOlpXOP1VVjaSIuUMATfAve8Q+oivwNG3Mnv+5OLZHfaBkB4SuUg==",
+    "Microsoft.Extensions.Localization/6.0.25": {
+      "sha512": "7g6QtX+XkdtirCP3eLRnd4x6s7Q6LMlRZnby0iqRIhKBZ7CEwMVAfOODRHRqUMZ6n1f67OY+yGmZSpKtbGmp+w==",
       "type": "package",
-      "path": "microsoft.extensions.localization.abstractions/6.0.0",
+      "path": "microsoft.extensions.localization/6.0.25",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Localization.dll",
+        "lib/net461/Microsoft.Extensions.Localization.xml",
+        "lib/net6.0/Microsoft.Extensions.Localization.dll",
+        "lib/net6.0/Microsoft.Extensions.Localization.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.xml",
+        "microsoft.extensions.localization.6.0.25.nupkg.sha512",
+        "microsoft.extensions.localization.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Localization.Abstractions/6.0.25": {
+      "sha512": "41x/D64w2kEjeKxC8nkB6lBmw731FoTjFoy8caE7063aNo/fwB/B4p39G0dn7nu752GznHT3I+sLWJG/tdzw6A==",
+      "type": "package",
+      "path": "microsoft.extensions.localization.abstractions/6.0.25",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1031,7 +1069,7 @@
         "lib/net6.0/Microsoft.Extensions.Localization.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.xml",
-        "microsoft.extensions.localization.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.localization.abstractions.6.0.25.nupkg.sha512",
         "microsoft.extensions.localization.abstractions.nuspec"
       ]
     },
@@ -2208,7 +2246,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.Extensions.Localization.Abstractions >= 6.0.0",
+      "Microsoft.Extensions.Localization >= 6.0.25",
       "TiendaAPI.Common >= 1.0.0",
       "TiendaAPI.Data >= 1.0.0"
     ]
@@ -2219,9 +2257,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj",
-      "projectName": "TiendaAPI.Service",
-      "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj",
+      "projectUniqueName": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Services.csproj",
+      "projectName": "TiendaAPI.Services",
+      "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Services.csproj",
       "packagesPath": "C:\\Users\\Adriel\\.nuget\\packages\\",
       "outputPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\obj\\",
       "projectStyle": "PackageReference",
@@ -2259,9 +2297,9 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Microsoft.Extensions.Localization.Abstractions": {
+          "Microsoft.Extensions.Localization": {
             "target": "Package",
-            "version": "[6.0.0, )"
+            "version": "[6.0.25, )"
           }
         },
         "imports": [

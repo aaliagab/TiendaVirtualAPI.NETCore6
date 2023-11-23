@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "B/fliIvoraiXa/y9kzrs0kHpjQcfMmNnbEA6fJ3HgxYyLYVh+vDdLEi4jOTTWr3jV26Bvh8uyf5VtZ8RY1FVGA==",
+  "dgSpecHash": "DEcTukejzTF298+u7WGYGqrGLSRrYVRTPLPuAGGm/hC8U+qgs4K4b6liJx1AGxID4x2RFREFvLb2HsCH3kqsQg==",
   "success": true,
-  "projectFilePath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj",
+  "projectFilePath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Adriel\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\Adriel\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
@@ -17,7 +17,8 @@
     "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\6.0.0\\microsoft.extensions.localization.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.localization\\6.0.25\\microsoft.extensions.localization.6.0.25.nupkg.sha512",
+    "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\6.0.25\\microsoft.extensions.localization.abstractions.6.0.25.nupkg.sha512",
     "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Adriel\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",

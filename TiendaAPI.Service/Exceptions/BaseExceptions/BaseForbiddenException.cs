@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace APICore.Services.Exceptions
+namespace TiendaAPI.Services.Exceptions.BaseExceptions
 {
     public class BaseForbiddenException : CustomBaseException
     {

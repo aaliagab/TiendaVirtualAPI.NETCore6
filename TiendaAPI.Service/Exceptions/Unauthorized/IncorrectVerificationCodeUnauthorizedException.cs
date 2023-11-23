@@ -1,18 +1,11 @@
-﻿using Microsoft.Extensions.Localization;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TiendaAPI.Services.Exceptions.BaseExceptions;
 
-namespace APICore.Services.Exceptions.Unauthorized
+namespace TiendaAPI.Services.Exceptions.Unauthorized
 {
     public class IncorrectVerificationCodeUnauthorizedException : BaseUnauthorizedException
     {
-        public IncorrectVerificationCodeUnauthorizedException(IStringLocalizer<object> localizer) : base()
+        public IncorrectVerificationCodeUnauthorizedException() : base()
         {
-            CustomCode = 401002;
-            CustomMessage = localizer.GetString(CustomCode.ToString());
         }
     }
 }

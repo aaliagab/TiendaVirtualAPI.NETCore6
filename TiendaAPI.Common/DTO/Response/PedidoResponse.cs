@@ -13,7 +13,7 @@ namespace TiendaAPI.Common.DTO.Response
     {
         public int PedidoId { get; set; }
         public ClienteResponse Cliente { get; set; }
-        public List<ProductoPedidoResponse> ProductosPedido { get; set; }
+        public List<ProductoPedidoResponse> ProductosPedido { get; set; } = new List<ProductoPedidoResponse>();
         public double Total { get; set; }
         public EstadoPedidoEnum Estado { get; set; }
     }

@@ -18,22 +18,5 @@ namespace TiendaAPI.Data
         public DbSet<Pedido> Pedidos { get; set; }
         public DbSet<ProductoPedido> ProductoPedidos { get; set; }
 
-
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //modelBuilder.Entity<Cliente>()//
-        //    .HasMany(c => c.PedidosRealizados)
-        //    .WithOne(p => p.Cliente)
-        //    .HasForeignKey(p => p.ClienteId);
-
-        //modelBuilder.Entity<Pedido>()
-        //    .HasMany(p => p.ProductosPedido)
-        //    .WithOne()
-        //    .HasForeignKey(pd => pd.PedidoId);
-
-        // Otras configuraciones de entidades y relaciones...
-
-        //base.OnModelCreating(modelBuilder);
-        // }
     }
 }

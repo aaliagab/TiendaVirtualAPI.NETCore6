@@ -1,13 +1,11 @@
-﻿using Microsoft.Extensions.Localization;
+﻿using TiendaAPI.Services.Exceptions.BaseExceptions;
 
-namespace APICore.Services.Exceptions
+namespace TiendaAPI.Services.Exceptions.NotFound
 {
     public class ProductoNotFoundException : BaseNotFoundException
     {
-        public ProductoNotFoundException(IStringLocalizer<object> localizer) : base()
+        public ProductoNotFoundException() : base()
         {
-            CustomCode = 404005;
-            CustomMessage = localizer.GetString(CustomCode.ToString());
         }
     }
 }

@@ -13,6 +13,6 @@ namespace TiendaAPI.Common.DTO.Response
         public int ClienteId { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
-        public List<PedidoResponse> PedidosRealizados { get; set; }
+        public List<PedidoResponse> PedidosRealizados { get; set; } = new List<PedidoResponse>();
     }
 }

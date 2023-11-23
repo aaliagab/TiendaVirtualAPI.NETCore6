@@ -1,6 +1,6 @@
 using TiendaAPI.Common.DTO.Response;
 
-namespace APICore.Services
+namespace TiendaAPI.Services
 {
     public interface IClienteService
     {

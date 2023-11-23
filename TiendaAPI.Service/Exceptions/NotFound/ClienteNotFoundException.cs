@@ -1,13 +1,12 @@
 ﻿using Microsoft.Extensions.Localization;
+using TiendaAPI.Services.Exceptions.BaseExceptions;
 
-namespace APICore.Services.Exceptions
+namespace TiendaAPI.Services.Exceptions.NotFound
 {
     public class ClienteNotFoundException : BaseNotFoundException
     {
-        public ClienteNotFoundException(IStringLocalizer<object> localizer) : base()
+        public ClienteNotFoundException() : base()
         {
-            CustomCode = 404004;
-            CustomMessage = localizer.GetString(CustomCode.ToString());
         }
     }
 }

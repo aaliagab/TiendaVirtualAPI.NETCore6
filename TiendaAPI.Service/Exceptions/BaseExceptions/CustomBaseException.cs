@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace APICore.Services.Exceptions
+namespace TiendaAPI.Services.Exceptions.BaseExceptions
 {
     public class CustomBaseException : Exception
     {

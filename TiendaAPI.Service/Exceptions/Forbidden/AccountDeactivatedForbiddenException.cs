@@ -1,13 +1,11 @@
-﻿using Microsoft.Extensions.Localization;
+﻿using TiendaAPI.Services.Exceptions.BaseExceptions;
 
-namespace APICore.Services.Exceptions
+namespace TiendaAPI.Services.Exceptions.Forbidden
 {
     public class AccountDeactivatedForbiddenException : BaseForbiddenException
     {
-        public AccountDeactivatedForbiddenException(IStringLocalizer<object> localizer) : base()
+        public AccountDeactivatedForbiddenException() : base()
         {
-            CustomCode = 403002;
-            CustomMessage = localizer.GetString(CustomCode.ToString());
         }
     }
 }

@@ -1,26 +1,38 @@
-using APICore.Services;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Localization;
 using TiendaAPI.Common.DTO.Response;
+using TiendaAPI.Data;
+using TiendaAPI.Data.Entities;
 using TiendaAPI.Data.UoW;
 
-namespace TiendaAPI.Service.Impl
+namespace TiendaAPI.Services.Impl
 {
     public class ClienteService : IClienteService
     {
         private readonly IUnitOfWork _uow;
-        private readonly IStringLocalizer<IClienteService> _localizer;
+        private readonly CoreDbContext _dbContext;
 
-        public ClienteService(IUnitOfWork uow, IStringLocalizer<IClienteService> localizer)
+        public ClienteService(IUnitOfWork uow, CoreDbContext dbContext)
         {
             _uow = uow ?? throw new ArgumentNullException(nameof(uow));
-            _localizer = localizer ?? throw new ArgumentNullException(nameof(localizer));
+            _dbContext = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
         }
 
-        public Task<ClienteResponse> CreateClienteAsync(string nombre, string direccion)
+        public async Task<ClienteResponse> CreateClienteAsync(string nombre, string direccion)
         {
-            throw new NotImplementedException();
+            var cliente = new Cliente
+            {
+                Nombre = nombre,
+                Direccion = direccion
+            };
+
+            _dbContext.Clientes.Add(cliente);
+            await _dbContext.SaveChangesAsync();
+
+            return new ClienteResponse
+            {
+                ClienteId = cliente.ClienteId,
+                Nombre = cliente.Nombre,
+                Direccion = cliente.Direccion
+            };
         }
 
         public Task<bool> DeleteCliente(int clienteId)

@@ -124,12 +124,12 @@
         }
       }
     },
-    "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj": {
+    "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj",
-        "projectName": "TiendaAPI.Service",
-        "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj",
+        "projectUniqueName": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Services.csproj",
+        "projectName": "TiendaAPI.Services",
+        "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Services.csproj",
         "packagesPath": "C:\\Users\\Adriel\\.nuget\\packages\\",
         "outputPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\obj\\",
         "projectStyle": "PackageReference",
@@ -167,9 +167,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.Extensions.Localization.Abstractions": {
+            "Microsoft.Extensions.Localization": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.25, )"
             }
           },
           "imports": [
@@ -222,8 +222,8 @@
               "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj": {
                 "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj"
               },
-              "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj": {
-                "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Service.csproj"
+              "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Services.csproj": {
+                "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Service\\TiendaAPI.Services.csproj"
               }
             }
           }
@@ -238,6 +238,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.1.38, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.25, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -247,6 +259,14 @@
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

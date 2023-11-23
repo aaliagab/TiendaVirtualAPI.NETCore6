@@ -1,13 +1,11 @@
-﻿using Microsoft.Extensions.Localization;
+﻿using TiendaAPI.Services.Exceptions.BaseExceptions;
 
-namespace APICore.Services.Exceptions
+namespace TiendaAPI.Service.Exceptions.Unauthorized
 {
     public class UnauthorizedException : BaseUnauthorizedException
     {
-        public UnauthorizedException(IStringLocalizer<object> localizer) : base()
+        public UnauthorizedException() : base()
         {
-            CustomCode = 401001;
-            CustomMessage = localizer.GetString(CustomCode.ToString());
         }
     }
 }
