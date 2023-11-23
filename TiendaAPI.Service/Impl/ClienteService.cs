@@ -2,6 +2,7 @@ using TiendaAPI.Common.DTO.Response;
 using TiendaAPI.Data;
 using TiendaAPI.Data.Entities;
 using TiendaAPI.Data.UoW;
+using TiendaAPI.Services.Exceptions.NotFound;
 
 namespace TiendaAPI.Services.Impl
 {
@@ -35,24 +36,101 @@ namespace TiendaAPI.Services.Impl
             };
         }
 
-        public Task<bool> DeleteCliente(int clienteId)
+        public async Task<bool> DeleteCliente(int clienteId)
         {
-            throw new NotImplementedException();
+            var cliente = await _uow.ClienteRepository.GetAsync(clienteId);
+            if (cliente != null)
+            {
+                _uow.ClienteRepository.Delete(cliente);
+                await _uow.CommitAsync();
+                return true;
+            }
+            return false;
         }
 
-        public Task<ClienteResponse> GetClienteById(int clienteId)
+        public async Task<ClienteResponse> GetClienteById(int clienteId)
         {
-            throw new NotImplementedException();
+            var cliente = await _uow.ClienteRepository.GetAsync(clienteId);
+            var clienteResponse = await mapCliente(cliente);
+            return clienteResponse;
         }
 
-        public Task<List<ClienteResponse>> GetClienteList()
+        public async Task<List<ClienteResponse>> GetClienteList()
         {
-            throw new NotImplementedException();
+            List<ClienteResponse> clienteResponses = new List<ClienteResponse>();
+            var clientes = await _uow.ClienteRepository.GetAllAsync();
+            foreach (var cliente in clientes)
+            {
+                clienteResponses.Add(await mapCliente(cliente));
+            }
+
+            return clienteResponses;
         }
 
-        public Task<bool> UpdateCliente(int ClienteId, string nombre, string direccion)
+        public async Task<ClienteResponse> UpdateCliente(int ClienteId, string nombre, string direccion)
         {
-            throw new NotImplementedException();
+            if (_uow.ClienteRepository.GetAsync(ClienteId) != null)
+            {
+                await _uow.ClienteRepository.UpdateAsync(new Cliente
+                {
+                    ClienteId = ClienteId,
+                    Nombre = nombre,
+                    Direccion = direccion
+                }, ClienteId);
+                await _uow.CommitAsync();
+
+                var cliente = await _uow.ClienteRepository.GetAsync(ClienteId);
+                return await mapCliente(cliente);
+            }
+            else {
+                throw new ClienteNotFoundException();
+            }
+            
+        }
+
+        public async Task<ClienteResponse> mapCliente(Cliente cliente) {
+            //pedidos
+            int clienteIdDeseado = cliente.ClienteId;
+            var pedidos = await _uow.PedidoRepository.FindAllAsync
+                (
+                pedido => pedido.ClienteId == clienteIdDeseado
+                );
+            List<PedidoResponse> pedidoResponses = new List<PedidoResponse>();
+            foreach (var pedido in pedidos)
+            {
+                //ProductoPedido
+                int pedidoIdDeseado = pedido.PedidoId;
+                var productosPedidos = await _uow.ProductoPedidoRepository.FindAllAsync
+                    (
+                    pp => pp.PedidoId == pedidoIdDeseado
+                    );
+                List<ProductoPedidoResponse> ppResponses = new List<ProductoPedidoResponse>();
+                foreach (var productoPedido in productosPedidos)
+                {
+                    ppResponses.Add(new ProductoPedidoResponse
+                    {
+                        ProductoPedidoId = productoPedido.ProductoPedidoId,
+                        ProductoId = productoPedido.ProductoId,
+                        PedidoId = productoPedido.PedidoId
+                    });
+                }
+
+                pedidoResponses.Add(new PedidoResponse
+                {
+                    PedidoId = pedido.PedidoId,
+                    ClienteId = pedido.ClienteId,
+                    ProductosPedido = ppResponses,
+                    Total = pedido.Total,
+                    Estado = (Common.DTO.Enums.EstadoPedidoEnum)pedido.Estado
+                });
+            }
+            return new ClienteResponse
+            {
+                ClienteId = cliente.ClienteId,
+                Nombre = cliente.Nombre,
+                Direccion = cliente.Direccion,
+                PedidosRealizados = pedidoResponses
+            };
         }
     }
 }

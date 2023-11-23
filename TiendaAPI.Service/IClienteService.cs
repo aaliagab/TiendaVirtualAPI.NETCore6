@@ -6,7 +6,7 @@ namespace TiendaAPI.Services
     {
         Task<ClienteResponse> CreateClienteAsync(string nombre, string direccion);
         Task<List<ClienteResponse>> GetClienteList();
-        Task<bool> UpdateCliente(int ClienteId, string nombre, string direccion);
+        Task<ClienteResponse> UpdateCliente(int ClienteId, string nombre, string direccion);
         Task<bool> DeleteCliente(int clienteId);
         Task<ClienteResponse> GetClienteById(int clienteId);
     }
