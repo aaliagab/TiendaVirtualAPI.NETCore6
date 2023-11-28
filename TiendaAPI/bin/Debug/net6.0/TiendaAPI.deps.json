@@ -806,6 +806,9 @@
         }
       },
       "TiendaAPI.Common/1.0.0": {
+        "dependencies": {
+          "TiendaAPI.Data": "1.0.0"
+        },
         "runtime": {
           "TiendaAPI.Common.dll": {}
         }
