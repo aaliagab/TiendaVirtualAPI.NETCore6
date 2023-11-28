@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\TiendaAPI.Data\TiendaAPI.Data.csproj" />
+  </ItemGroup>
+
 </Project>

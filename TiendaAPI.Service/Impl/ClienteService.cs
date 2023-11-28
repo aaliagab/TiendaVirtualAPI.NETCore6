@@ -121,7 +121,7 @@ namespace TiendaAPI.Services.Impl
                     ClienteId = pedido.ClienteId,
                     ProductosPedido = ppResponses,
                     Total = pedido.Total,
-                    Estado = (Common.DTO.Enums.EstadoPedidoEnum)pedido.Estado
+                    Estado = pedido.Estado
                 });
             }
             return new ClienteResponse
