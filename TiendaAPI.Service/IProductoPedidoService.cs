@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TiendaAPI.Common.DTO.Response;
 
 namespace TiendaAPI.Services
 {
-    internal interface IProductoPedidoService
+    public interface IProductoPedidoService
     {
+        Task<ProductoPedidoResponse> CreateProductoPedidoAsync(int ProductoId, int PedidoId);
+        Task<List<ProductoPedidoResponse>> GetProductoPedidoList();
+        Task<bool> DeleteProductoPedido(int ProductoPedidoId);
+        Task<ProductoPedidoResponse> GetProductoPedidoById(int ProductoPedidoId);
     }
 }

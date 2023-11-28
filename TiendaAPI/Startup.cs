@@ -54,6 +54,7 @@ namespace TiendaAPI
             services.AddScoped<IClienteService, ClienteService>();
             services.AddScoped<IProductoService, ProductoService>();
             services.AddScoped<IPedidoService, PedidoService>();
+            services.AddScoped<IProductoPedidoService, ProductoPedidoService>();
         }
 
         public async void Configure(IApplicationBuilder app, IWebHostEnvironment env, CoreDbContext dbContext)

@@ -97,7 +97,6 @@ namespace TiendaAPI.Services.Impl
                 productoPedido => productoPedido.PedidoId == PedidoIdDeseado
                 );
             List<ProductoPedidoResponse> productosPedidoResponses = new List<ProductoPedidoResponse>();
-            double total = 0;
             foreach (var productoPedido in productosPedido)
             {
                 productosPedidoResponses.Add(new ProductoPedidoResponse
@@ -106,14 +105,13 @@ namespace TiendaAPI.Services.Impl
                     ProductoId = productoPedido.ProductoId,
                     ProductoPedidoId = productoPedido.ProductoPedidoId
                 });
-                total += productoPedido.Producto.Precio;
             }
             return new PedidoResponse
             {
                 PedidoId = Pedido.PedidoId,
                 ClienteId = Pedido.ClienteId,
                 ProductosPedido = productosPedidoResponses,
-                Total = total,
+                Total = Pedido.Total,
                 Estado = Pedido.Estado
             };
 
