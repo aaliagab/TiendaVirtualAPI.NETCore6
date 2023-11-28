@@ -27,7 +27,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj": {
+                "projectPath": "F:\\Cursos y Repos\\Cursos .Net\\TiendaVirtualAPI\\TiendaAPI.Data\\TiendaAPI.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

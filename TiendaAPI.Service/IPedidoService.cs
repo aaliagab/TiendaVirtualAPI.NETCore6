@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TiendaAPI.Common.DTO.Response;
+using TiendaAPI.Data.Entities.Enums;
 
 namespace TiendaAPI.Services
 {
-    internal interface IPedidoService
+    public interface IPedidoService
     {
+        Task<PedidoResponse> CreatePedidoAsync(int ClienteId, EstadoPedidoEnum estado);
+        Task<List<PedidoResponse>> GetPedidoList();
+        Task<PedidoResponse> UpdatePedido(int PedidoId, int ClienteId, EstadoPedidoEnum estado);
+        Task<bool> DeletePedido(int PedidoId);
+        Task<PedidoResponse> GetPedidoById(int PedidoId);
     }
 }
